@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* import hack font 
+https://sourcefoundry.org/hack/
+*/
+@font-face {
+  font-family: Hack;
+  src: url(./assets/Hack.ttf);
+}
+@font-face {
+  font-family: Hack;
+  src: url(./assets/Hack-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Hack;
+  src: url(./assets/Hack-Italic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: Hack;
+  src: url(./assets/Hack-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+/* end font */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 2px;
+  padding: 2px;
+}
+
+html {
+  background-color: #333;
+  color: #ccc;
+  font-family: Hack;
+}
+
+/* header system pulled from bootstrap */
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1,
+.h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  h1,
+.h1 {
+    font-size: 2.5rem;
+  }
+}
+h2,
+.h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  h2,
+.h2 {
+    font-size: 2rem;
+  }
+}
+h3,
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+  h3,
+.h3 {
+    font-size: 1.75rem;
+  }
+}
+h4,
+.h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  h4,
+.h4 {
+    font-size: 1.5rem;
+  }
+}
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+/* end header system */
+/* begin text color stuff */
+.textRed,
+.warning {
+  color: #f00;
+}
+
+.textDarkRed {
+  color: #700;
+}
+
+.textLightGreen {
+  color: #0f0;
+}
+
+.textGreen {
+  color: #080;
+}
+
+.textBlue {
+  color: #00f;
+}
+
+.textLightBlue {
+  color: #08f;
+}
+
+.textYellow {
+  color: #ff0;
+}
+
+.textOrange {
+  color: #e80;
+}
+
+.textWhite {
+  color: #fff;
+}
+
+.textBlack {
+  color: #000;
+}
+
+.textGreenBlue {
+  color: #0fd;
+}
+
+.textPurple {
+  color: #80a;
+}
+
+.textPink {
+  color: #f0f;
+}
+
+a:link {
+  color: #0bf;
+}
+
+a:visited {
+  color: #a0a;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+/* end text color stuff */
+/* background colors */
+.background-red {
+  background-color: #f00;
+}
+
+.background-darkRed {
+  background-color: #700;
+}
+
+.background-lightGreen {
+  background-color: #0f0;
+}
+
+.background-green {
+  background-color: #080;
+}
+
+.background-blue {
+  background-color: #00f;
+}
+
+.background-lightBlue {
+  background-color: #08f;
+}
+
+.background-yellow {
+  background-color: #ff0;
+}
+
+.background-orange {
+  background-color: #e80;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.background-black {
+  background-color: #000;
+}
+
+.background-greenBlue {
+  background-color: #0fd;
+}
+
+.background-purple {
+  background-color: #80a;
+}
+
+.background-pink {
+  background-color: #f0f;
+}
+
+/* end background colors */
+/* page specific stuff */
+#demoLinkUnclicked {
+  color: #0bf;
+}
+
+/* end page stuff */
+/* start flex and sizing garbage of hatred and failure */
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  flex: 1;
+}
+
+.wireframe {
+  border: 1px solid #fff;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.set-width-200 {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+/* end flex size garbage */
+
+/*# sourceMappingURL=style.css.map */

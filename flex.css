@@ -1,0 +1,26 @@
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  flex: 1;
+}
+
+.wireframe {
+  border: 1px solid #000;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.set-width-200 {
+  min-width: 200px;
+  max-width: 200px;
+}

@@ -1,0 +1,412 @@
+@use 'reset';
+
+@import 'color.scss';
+
+/* import hack font 
+https://sourcefoundry.org/hack/
+*/
+
+@font-face {
+  font-family: Hack;
+  src: url(./assets/Hack.ttf);
+}
+
+@font-face {
+  font-family: Hack;
+  src: url(./assets/Hack-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Hack;
+  src: url(./assets/Hack-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Hack;
+  src: url(./assets/Hack-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* end font */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  // space outside element
+  margin: 2px;
+
+  // space inside element
+  padding: 2px;
+}
+
+
+html {
+  background-color: $primaryColor;
+  color: $secondColor;
+
+  font-family: Hack;
+}
+
+/* header system pulled from bootstrap */
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1,
+.h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+
+  h3,
+  .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+
+  h4,
+  .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+/* end header system */
+
+/* begin text color stuff */
+
+.textRed,
+.warning {
+  color: $red;
+}
+
+.textDarkRed {
+  color: $darkRed;
+}
+
+.textLightGreen {
+  color: $lightGreen;
+}
+
+.textGreen {
+  color: $green;
+}
+
+.textBlue {
+  color: $blue;
+}
+
+.textLightBlue {
+  color: $lightBlue;
+}
+
+.textYellow {
+  color: $yellow;
+}
+
+.textOrange {
+  color: $orange;
+}
+
+.textWhite {
+  color: $white;
+}
+
+.textBlack {
+  color: $black;
+}
+
+.textGreenBlue {
+  color: $greenBlue;
+}
+
+.textPurple {
+  color: $purple;
+}
+
+.textPink {
+  color: $pink;
+}
+
+a:link {
+  color: $linkColor;
+}
+
+a:visited {
+  color: $linkVisited;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+/* end text color stuff */
+
+/* background colors */
+
+.background-red {
+  background-color: $red;
+}
+
+.background-darkRed {
+  background-color: $darkRed;
+}
+
+.background-lightGreen {
+  background-color: $lightGreen;
+}
+
+.background-green {
+  background-color: $green;
+}
+
+.background-blue {
+  background-color: $blue;
+}
+
+.background-lightBlue {
+  background-color: $lightBlue;
+}
+
+.background-yellow {
+  background-color: $yellow;
+}
+
+.background-orange {
+  background-color: $orange;
+}
+
+.background-white {
+  background-color: $white;
+}
+
+.background-black {
+  background-color: $black;
+}
+
+.background-greenBlue {
+  background-color: $greenBlue;
+}
+
+.background-purple {
+  background-color: $purple;
+}
+
+.background-pink {
+  background-color: $pink;
+}
+
+/* end background colors */
+
+/* page specific stuff */
+
+#demoLinkUnclicked {
+  color: $linkColor;
+}
+
+/* end page stuff */
+
+
+/* start flex and sizing garbage of hatred and failure */
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  flex: 1;
+}
+
+.wireframe {
+  border: 1px solid #fff;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.set-width-200 {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+/* end flex size garbage */
+
+
+// TODO set all divs to flex 1 tomake life easy
+// classes like flex-row-container or flex-column-container
+
+// text and images use text-align
+// use margin: auto; (and specify specific sides)
+// margin 0 auto; will do only sides
+
+
+// #sourceMappingURL=style.css.map
+
+// sass --watch style.scss style.css
