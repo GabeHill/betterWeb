@@ -128,6 +128,11 @@ html {
   font-family: Hack;
 }
 
+p {
+  text-align: left;
+  margin: 0 auto;
+}
+
 /* header system pulled from bootstrap */
 h6,
 .h6,
@@ -141,10 +146,9 @@ h2,
 .h2,
 h1,
 .h1 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  margin: 0 auto;
 }
 
 h1,
@@ -358,15 +362,6 @@ a:active {
 
 /* end background colors */
 
-/* page specific stuff */
-
-#demoLinkUnclicked {
-  color: $linkColor;
-}
-
-/* end page stuff */
-
-
 /* start flex and sizing garbage of hatred and failure */
 
 .flex-container-row {
@@ -387,8 +382,14 @@ div {
   border: 1px solid #fff;
 }
 
+.center-image,
 .center-text {
   text-align: center;
+}
+
+.set-width-100 {
+  min-width: 100px;
+  max-width: 100px;
 }
 
 .set-width-200 {
@@ -396,7 +397,130 @@ div {
   max-width: 200px;
 }
 
+.set-width-300 {
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.set-width-400 {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.set-width-500 {
+  min-width: 500px;
+  max-width: 500px;
+}
+
+.set-width-600 {
+  min-width: 600px;
+  max-width: 600px;
+}
+
+.set-width-700 {
+  min-width: 700px;
+  max-width: 700px;
+}
+
+.set-width-800 {
+  min-width: 800px;
+  max-width: 800px;
+}
+
+.set-width-900 {
+  min-width: 900px;
+  max-width: 900px;
+}
+
+.set-width-1000 {
+  min-width: 1000px;
+  max-width: 1000px;
+}
+
+
+.set-height-100 {
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.set-height-200 {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.set-height-300 {
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.set-height-400 {
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.set-height-500 {
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.set-height-600 {
+  min-height: 600px;
+  max-height: 600px;
+}
+
+.set-height-700 {
+  min-height: 700px;
+  max-height: 700px;
+}
+
+.set-height-800 {
+  min-height: 800px;
+  max-height: 800px;
+}
+
+.set-height-900 {
+  min-height: 900px;
+  max-height: 900px;
+}
+
+.set-height-1000 {
+  min-height: 1000px;
+  max-height: 1000px;
+}
+
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.quarter-left {
+  margin-left: 25%;
+}
+
 /* end flex size garbage */
+
+/* transition thing */
+
+.become-different-box {
+  flex: none;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #0000FF;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.become-different-box:hover {
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+
+/* end transition */
 
 
 // TODO set all divs to flex 1 tomake life easy
@@ -405,6 +529,34 @@ div {
 // text and images use text-align
 // use margin: auto; (and specify specific sides)
 // margin 0 auto; will do only sides
+
+
+
+
+/* page specific stuff */
+
+#demoLinkUnclicked {
+  color: $linkColor;
+}
+
+#display-stuff {
+  flex: 3;
+}
+
+#navbar-left {
+  flex: .5;
+}
+
+// #transition-box {
+//   border-style: solid;
+//   border-width: 1px;
+//   display: block;
+//   width: 100px;
+//   height: 100px;
+//   background-color: #0000FF;
+//   transition: width 2s, height 2s, background-color 2s, transform 2s;
+// }
+/* end page stuff */
 
 
 // #sourceMappingURL=style.css.map
