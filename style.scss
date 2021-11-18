@@ -304,6 +304,10 @@ a:active {
   font-weight: bold;
 }
 
+.text-left {
+  text-align: left;
+}
+
 /* end text color stuff */
 
 /* background colors */
@@ -500,6 +504,27 @@ div {
 
 /* end flex size garbage */
 
+/* mixin thing */
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.rotate-20 {
+  flex: none;
+  display: block;
+  transition: transform 1s;
+}
+
+.rotate-20:hover {
+  @include transform(rotate(80deg));
+  // transform: rotate(80deg);
+}
+
+/* end mixin */
+
 /* transition thing */
 
 .become-different-box {
@@ -517,10 +542,12 @@ div {
   background-color: #FFCCCC;
   width: 200px;
   height: 200px;
-  transform: rotate(180deg);
+  @include transform(rotate(180deg));
 }
 
 /* end transition */
+
+
 
 
 // TODO set all divs to flex 1 tomake life easy
@@ -547,6 +574,9 @@ div {
   flex: .5;
 }
 
+// #mixin-div:hover {
+//   @include transform(rotate(20deg));
+// }
 // #transition-box {
 //   border-style: solid;
 //   border-width: 1px;

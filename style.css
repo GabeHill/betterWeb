@@ -333,6 +333,10 @@ a:active {
   font-weight: bold;
 }
 
+.text-left {
+  text-align: left;
+}
+
 /* end text color stuff */
 /* background colors */
 .background-red {
@@ -522,6 +526,20 @@ div {
 }
 
 /* end flex size garbage */
+/* mixin thing */
+.rotate-20 {
+  flex: none;
+  display: block;
+  transition: transform 1s;
+}
+
+.rotate-20:hover {
+  -webkit-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+/* end mixin */
 /* transition thing */
 .become-different-box {
   flex: none;
@@ -538,6 +556,8 @@ div {
   background-color: #FFCCCC;
   width: 200px;
   height: 200px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 

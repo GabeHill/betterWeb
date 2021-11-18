@@ -14,11 +14,17 @@
   <div id="root" class="flex-container-row">
 
 
-    <div id="navbar-left" class="flex-container-column">navbar here</div>
+    <div id="navbar-left" class="flex-container-column wireframe">navbar here</div>
 
-    <div id="display-stuff" class="flex-container-column">
-      <div id="text-container" class="flex-container-column">
-        <div id="hTags">
+    <div id="display-stuff" class="flex-container-column wireframe">
+      <div id="text-container" class="flex-container-column wireframe">
+        <div id="hTags" class="wireframe">
+          <p>All headings are <b>font-weight: 500; line-height: 1.2; margin: 0 auto;</b></p>
+          <p>Headings are sized based on screen size. Ex:</p>
+          <br>
+          <p><b>h1, .h1 {<br>
+              font-size: calc(1.375rem + 1.5vw);<br>
+              }</b></p>
           <h1>This is an &lt;h1&gt;</h1>
           <h2>This is an &lt;h2&gt;</h2>
           <h3>This is an &lt;h3&gt;</h3>
@@ -26,44 +32,58 @@
           <h5>This is an &lt;h5&gt;</h5>
           <h6>This is an &lt;h6&gt;</h6>
         </div>
-        <div id="pTags">
+        <div id="pTags" class="wireframe">
           <p>This is a &lt;p&gt;</p>
+          <br>
+          <p>Paragraphs are <b>text-align: left;</b> with <b>margin: 0 auto;</b></p>
+          <br>
+          <p>The default font is <a href="https://sourcefoundry.org/hack/">Hack</a>.</p>
           <br />
-          <p class="textRed">This is a textRed or warning</p>
+          <p class="textRed">This is a <b>textRed</b> or <b>warning</b></p>
           <br />
-          <p class="textDarkRed background-white">This is a textDarkRed with background-white</p>
+          <p class="textDarkRed background-white">This is a <b>textDarkRed</b> with <b>background-white</b></p>
           <br />
-          <p class="textLightGreen">This is a textLightGreen</p>
+          <p class="textLightGreen">This is a <b>textLightGreen</b></p>
           <br />
-          <p class="textGreen">This is a textGreen</p>
+          <p class="textGreen">This is a <b>textGreen</b></p>
           <br />
-          <p class="textBlue">This is a textBlue</p>
+          <p class="textBlue">This is a <b>textBlue</b></p>
           <br />
-          <p class="textYellow">This is a textYellow</p>
+          <p class="textYellow">This is a <b>textYellow</b></p>
           <br />
-          <p class="textOrange">This is a textOrange</p>
+          <p class="textOrange">This is a <b>textOrange</b></p>
           <br />
-          <p class="textWhite background-black">This is a textWhite with background-black</p>
+          <p class="textWhite background-black">This is a <b>textWhite</b> with <b>background-black</b></p>
           <br />
-          <p class="textBlack background-white">This is a textBlack with background-white</p>
+          <p class="textBlack background-white">This is a <b>textBlack</b> with <b>background-white</b></p>
           <br />
-          <p class="textGreenBlue">This is a textGreenBlue</p>
+          <p class="textGreenBlue">This is a <b>textGreenBlue</b></p>
           <br />
-          <p class="textPurple background-black">This is a textPurple with background-black</p>
+          <p class="textPurple background-black">This is a <b>textPurple</b> with <b>background-black</b></p>
           <br />
-          <p class="textPink">This is a textPink</p>
+          <p class="textPink">This is a <b>textPink</b></p>
           <br />
-          <p class="textLightBlue">This is a textLightBlue</p>
+          <p class="textLightBlue">This is a <b>textLightBlue</b></p>
           <br />
           <p><a id="demoLinkUnclicked" href="">This is an unclicked link</a></p>
           <br />
           <p><a href="">This is a clicked link</a></p>
         </div>
       </div>
-      <div id="size-demos" class="flex-container-column">
-        <h4>Hover over the box to see the become-different-box class in action</h4>
-        <div id="transition-box" class="become-different-box">this is a box</div>
+      <div id="size-demos" class="flex-container-column wireframe text-left">
+        <div>
+          <h4>Hover over the box to see the become-different-box class in action.</h4>
+          <h6>It uses a mixin for the rotation tranformation to allow it to work on all platforms.</h6>
+        </div>
+        <div id="transition-box" class="become-different-box">This box will grow, rotate, and change colors.
+        </div>
+        <div class="set-width-100 wireframe">This div is a fixed width of 100 pixels.</div>
+        <div class="set-width-400 wireframe">This div is a fixed width of 400 pixels. Fixed width works in steps of 100
+          from 100 to 1000 pixels wide.</div>
+        <div class="set-width-800 wireframe">This div is a fixed width of 800 pixels. These divs also have the wireframe
+          class to give you an outline to help layout your website.</div>
       </div>
+
     </div>
 
 
