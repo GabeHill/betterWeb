@@ -19,12 +19,7 @@
     <div id="display-stuff" class="flex-container-column wireframe">
       <div id="text-container" class="flex-container-column wireframe">
         <div id="hTags" class="wireframe">
-          <p>All headings are <b>font-weight: 500; line-height: 1.2; margin: 0 auto;</b></p>
-          <p>Headings are sized based on screen size. Ex:</p>
-          <br>
-          <p><b>h1, .h1 {<br>
-              font-size: calc(1.375rem + 1.5vw);<br>
-              }</b></p>
+          <p>Headings are sized based on screen size.</p>
           <h1>This is an &lt;h1&gt;</h1>
           <h2>This is an &lt;h2&gt;</h2>
           <h3>This is an &lt;h3&gt;</h3>
@@ -35,7 +30,7 @@
         <div id="pTags" class="wireframe">
           <p>This is a &lt;p&gt;</p>
           <br>
-          <p>Paragraphs are <b>text-align: left;</b> with <b>margin: 0 auto;</b></p>
+          <p>Paragraphs are colored with <br>text[Color]</br> classes</p>
           <br>
           <p>The default font is <a href="https://sourcefoundry.org/hack/">Hack</a>.</p>
           <br />
@@ -72,7 +67,7 @@
       </div>
       <div id="size-demos" class="flex-container-column wireframe text-left">
         <div>
-          <h4>Hover over the box to see the become-different-box class in action.</h4>
+          <h4>Hover over the box to see the <b>become-different-box</b> class in action.</h4>
           <h6>It uses a mixin for the rotation tranformation to allow it to work on all platforms.</h6>
         </div>
         <div id="transition-box" class="become-different-box">This box will grow, rotate, and change colors.
@@ -81,7 +76,8 @@
         <div class="set-width-400 wireframe">This div is a fixed width of 400 pixels. Fixed width works in steps of 100
           from 100 to 1000 pixels wide.</div>
         <div class="set-width-800 wireframe">This div is a fixed width of 800 pixels. These divs also have the wireframe
-          class to give you an outline to help layout your website.</div>
+          class to give you an outline to help layout your website. Div sizes are set with <b>set-width-[number]</b>.
+        </div>
       </div>
 
     </div>
