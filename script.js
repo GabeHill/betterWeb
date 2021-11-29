@@ -27,14 +27,14 @@ window.onclick = function (event) {
 /*slideshow stuffffffff*/
 let slideIndex = 1
 
-// Next/previous controls
+// next/prev control
 showSlides(slideIndex)
 
 function plusSlides(n) {
   showSlides(slideIndex += n)
 }
 
-// Thumbnail image controls
+// dot button control
 function currentSlide(n) {
   showSlides(slideIndex = n)
 }
